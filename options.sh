@@ -31,5 +31,5 @@ MANAGER_ZONE=us-central1-f
 MANAGER_DISK=50
 
 #Advanced Settings
-ENGINE_INSTALL_URL=experimental.docker.com
+ENGINE_INSTALL_URL=test.docker.com
 TAGS=swarm-cluster

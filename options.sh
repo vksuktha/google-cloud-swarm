@@ -12,23 +12,23 @@
 #  limitations under the License.
 
 #Project Options
-PROJECT_ID=YOUR_PROJECT_ID_HERE
+PROJECT_ID=collabnix-1346
 
 #Cluster Details
 NUM_MANAGERS=1 #Need at least one manager
-NUM_WORKERS=2
-SWARM_SECRET="somestring"
-PREFIX=my-swarm
+NUM_WORKERS=5
+SWARM_SECRET="collabnix"
+PREFIX=collab
 
 #Machine Options (Worker)
 WORKER_MACHINE_TYPE=n1-standard-1
 WORKER_ZONE=us-central1-f
-WORKER_DISK=100
+WORKER_DISK=50
 
 #Machine Options (Manager)
 MANAGER_MACHINE_TYPE=n1-standard-1
 MANAGER_ZONE=us-central1-f
-MANAGER_DISK=100
+MANAGER_DISK=50
 
 #Advanced Settings
 ENGINE_INSTALL_URL=experimental.docker.com

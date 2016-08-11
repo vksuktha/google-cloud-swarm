@@ -1,35 +1,16 @@
-# 	Copyright 2016, Google, Inc.
-#  Licensed under the Apache License, Version 2.0 (the "License");
-#  you may not use this file except in compliance with the License.
-#  You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-#  Unless required by applicable law or agreed to in writing, software
-#  distributed under the License is distributed on an "AS IS" BASIS,
-#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#  See the License for the specific language governing permissions and
-#  limitations under the License.
-
-#Project Options
-PROJECT_ID=collabnix-1346
-
 #Cluster Details
-NUM_MANAGERS=1 #Need at least one manager
-NUM_WORKERS=5
-SWARM_SECRET="collabnix"
-PREFIX=collab
+NUM_MANAGERS=1
+NUM_WORKERS=2
+PREFIX=vijay
 
-#Machine Options (Worker)
-WORKER_MACHINE_TYPE=n1-standard-1
-WORKER_ZONE=us-central1-f
-WORKER_DISK=50
+WORKER_ZONE=d
+WORKER_REGION=us-east-1
+WORKER_VPCID=vpc-e46cb483
+export WORKER_ACCESS_KEY=AKIAJ6DGCFCI3TE6SPKA
+export WORKER_SECRET_KEY=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
 
-#Machine Options (Manager)
-MANAGER_MACHINE_TYPE=n1-standard-1
-MANAGER_ZONE=us-central1-f
-MANAGER_DISK=50
-
-#Advanced Settings
-ENGINE_INSTALL_URL=test.docker.com
-TAGS=swarm-cluster
+MANAGER_ZONE=d
+MANAGER_REGION=us-east-1
+MANAGER_VPCID=vpc-e46cb483
+export MANAGER_ACCESS_KEY=AKIAJ6DGCFCI3TE6SPKA
+export MANAGER_SECRET_KEY=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
